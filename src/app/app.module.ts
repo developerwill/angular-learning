@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+
 
 import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
-
 import { ServerModule } from './server/server.module';
+import { SharedModule } from './Shared.module';
 
 @NgModule({
     declarations: [
@@ -16,7 +16,7 @@ import { ServerModule } from './server/server.module';
         SuccessAlertComponent
     ],
     imports: [
-        BrowserModule,
+        SharedModule,
         ServerModule
     ],
     providers: [],

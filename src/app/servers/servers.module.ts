@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { ServersComponent } from './servers.component';
-//import { CommonModule } from '@angular/common';
+import { SharedModule } from '../Shared.module';
 
 @NgModule({
     declarations: [
         ServersComponent
     ],
-    /* imports: [
-        CommonModule
-    ], */
+    imports: [
+        SharedModule
+    ],
     exports: [
         ServersComponent
     ]
