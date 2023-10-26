@@ -2,9 +2,14 @@
     Add Server
 </button> -->
 
+<label for="">Server Name</label>
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+
 <button class="btn btn-primary" (click)="onCreateServer()">
     Add Server
 </button>
+
+<p>Server name: {{ serverName }}</p>
 
 <p>{{ serverCreationStatus }}</p>
 
